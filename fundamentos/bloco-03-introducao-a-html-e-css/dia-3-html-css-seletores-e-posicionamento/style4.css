@@ -1,0 +1,11 @@
+div:hover {
+  border-width: small;
+  border-style: solid;
+  border-color: #00f;
+
+}
+
+div {   
+    transition: all;
+
+}
