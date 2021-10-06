@@ -2,10 +2,35 @@ div:hover {
   border-width: small;
   border-style: solid;
   border-color: #00f;
-
+  width: 160px;
+  height: 50px;
+  
 }
 
-div {   
-    
+div:nth-last-of-type(5) {
+  color: blue;
+  background-color: rgb(202, 20, 20);
+}
+div:nth-last-of-type(4) {
+  color:purple;
+  background-color: rgb(34, 199, 28);
+}
+div:nth-last-of-type(3) {
+  color: orange;
+  background-color: blanchedalmond;
+  padding: 20px;
 
+}
+div:nth-last-of-type(2) {
+  color: black;
+  background-color: rgb(10, 241, 241);
+}
+div:nth-last-of-type(1) {
+  color: aqua;
+  background-color: black;
+}
+
+div:nth-last-of-type(odd) {
+  font-style: italic;
+  
 }
