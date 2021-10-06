@@ -1,0 +1,44 @@
+ol li:nth-last-of-type(odd) {
+    background: yellow;
+    text-transform: uppercase;
+    
+}
+  
+  ol li:nth-last-of-type(even) {
+    background: yellow;
+    color: green;
+  }
+
+  h1, h2, h3 {
+      color: red;
+
+  }
+
+  h1 em{
+      font-size: 40px;
+      border: 1px solid black;
+  }
+
+  li {
+      font-size: 20px;
+  }
+
+  li em {
+      font-weight: bolder;
+  }
+
+   a[href*="stackoverflow"]:hover {
+       background-color: orange;
+   }
+   a[href*="w3schools"]:hover {
+    background-color: green;
+    }
+    a[href*="developer.mozilla"]:hover {
+        background-color: black;
+    }
+    a[href*="devdocs.io"]:hover {
+        background-color: yellow ;
+    }
+    a[href*="app.betrybe.com"]:hover {
+        background-color: green ;
+    }
