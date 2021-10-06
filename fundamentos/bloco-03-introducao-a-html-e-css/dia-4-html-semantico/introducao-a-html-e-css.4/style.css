@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header-page {
+    text-align: center;
+    background-color: #14213D;
+    color: #FCA311;
+}
+
+ul li {
+    display: inline-block;
+    color: #FCA311;
+    margin-left: 60px;
+    
+}
