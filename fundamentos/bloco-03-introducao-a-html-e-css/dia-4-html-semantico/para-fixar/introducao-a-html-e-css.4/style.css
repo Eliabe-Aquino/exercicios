@@ -9,6 +9,9 @@
     color: #FCA311;
 }
 
-.links {
+ul li {
+    display: inline-block;
     color: #FCA311;
+    margin-left: 60px;
+    
 }
