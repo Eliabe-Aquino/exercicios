@@ -1,0 +1,15 @@
+ol li:nth-last-of-type(odd) {
+    background: yellow;
+    text-transform: uppercase;
+    
+}
+  
+  ol li:nth-last-of-type(even) {
+    background: yellow;
+    color: green;
+  }
+
+  h1, h2, h3 {
+      color: red;
+
+  }
