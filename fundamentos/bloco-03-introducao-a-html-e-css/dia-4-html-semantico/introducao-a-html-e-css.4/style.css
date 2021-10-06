@@ -7,11 +7,30 @@
     text-align: center;
     background-color: #14213D;
     color: #FCA311;
+    text-decoration: none;
 }
 
-ul li {
+ul li,a {
     display: inline-block;
-    color: #FCA311;
     margin-left: 60px;
+    color: #FCA311;
+    text-decoration: none;
     
+    
+    }
+
+article {
+    margin-top: 200px;
+    height: 500px;
+    margin-right: 30%;
+    background-color: #14213D;
+}
+h2 {
+    color: #FCA311;
+    text-align: center;
+}
+.n-arts {
+    font-style: italic;
+    color: #FCA311;
+    text-align: left;
 }
