@@ -2,35 +2,66 @@
     padding: 0;
     margin: 0;
 }
-
-.header-page {
-    text-align: center;
-    background-color: #14213D;
-    color: #FCA311;
-    text-decoration: none;
+body {
+    background-color: #81B29A;
 }
 
+.header-page h1 {
+    text-align: center;
+    background-color: #3D405B;
+    color: #F2CC8F;
+    border: 1px solid #F2CC8F;
+
+}
+.links {
+    text-align: right;
+    background-color: #3D405B;
+    color: #F2CC8F;
+    text-decoration: none;
+}
 ul li,a {
     display: inline-block;
     margin-left: 60px;
-    color: #FCA311;
+    color: #F2CC8F;
     text-decoration: none;
     
     
     }
 
 article {
-    margin-top: 200px;
-    height: 500px;
-    margin-right: 30%;
-    background-color: #14213D;
+    margin-top: 50px;
+    height: 198px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #3D405B;
+    display: inline-block;
 }
-h2 {
-    color: #FCA311;
+.artigos img {
+    width: 248px;
+    float: right;
+    border: 1px solid #F2CC8F;
+}
+.artigos h2 {
+    border: 1px solid #F2CC8F;
+}
+ h2 { 
+    color: #F2CC8F;
     text-align: center;
 }
-.n-arts {
+.artigos h3{
+    border: 1px solid #F2CC8F;
     font-style: italic;
-    color: #FCA311;
-    text-align: left;
+    color: #F2CC8F;
+    margin-right: 304px;
+    padding-right: 50px ;
+    
+}
+.tabel{
+    margin-top: 7px;
+    color: #F2CC8F;
+
+}
+table, th, td {
+    border: 1px solid #F2CC8F;
+    
 }
