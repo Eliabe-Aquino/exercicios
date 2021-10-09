@@ -23,3 +23,25 @@ if (currentHour >=22) {
 // Se o horário estiver entre 11 e 14, insira "Hora do almoço!!!" na variável "message".
 // Se o horário estiver entre 4 e 11, insira "Hmmm, cheiro de café recém passado" na variável "message".
 // Agora imprima a variável message fora das suas condições.
+
+// Operador OR
+
+const weekyday =  'pc';
+
+if (weekyday === "segunda-feira" || weekyday === "terça-feira" || weekyday === "quarta-feira" || weekyday === "quinta-feira" || weekyday === "sexta-feira") {
+  console.log("Oba, mais um dia de aprendizado na Trybe >:D")
+} else if ( weekyday === "sabado" || weekyday === "domingo") {
+  console.log("FINALMENTE, descanso merecido UwU");
+} else {
+    console.log("Nao e um dia da semana")
+}
+
+
+// Operador NOT
+
+
+console.log(!(2 + 2) === 4);
+
+const squirtle = "melhor pokemon inicial";
+
+console.log(!squirtle); // false
