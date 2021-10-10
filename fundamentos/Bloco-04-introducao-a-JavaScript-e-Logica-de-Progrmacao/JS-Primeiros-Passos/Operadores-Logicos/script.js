@@ -45,3 +45,27 @@ console.log(!(2 + 2) === 4);
 const squirtle = "melhor pokemon inicial";
 
 console.log(!squirtle); // false
+
+
+// Switch e Case
+
+// Crie uma variável para armazenar o estado da pessoa candidata no processo seletivo, que pode ser: 'aprovada' , 'lista' ou 'reprovada' ;
+
+
+//  Crie uma estrutura condicional com o switch/case que irá imprimir as mensagens do exercício anterior se o estado da pessoa candidata for 'aprovada' , 'lista' ou 'reprovada' . Como default , imprima a mensagem de 'não se aplica' .
+let candidata = 'lista'
+
+switch (candidata) {
+    case 'aprovada':
+        console.log("Voce foi Aprovado");
+        break;
+    case 'lista':
+        console.log("Voce esta na lista de espera");
+        break;
+    case 'aprovada':
+        console.log("Voce foi Reprovado");
+        break;
+    
+    default:
+        console.log("nao se aplica")
+}
