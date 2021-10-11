@@ -62,7 +62,7 @@ let todospositivos = angulo1 > 0 && angulo2 > 0 && angulo3 > 0
 
 if (todospositivos) {
     if (soma === 180) {
-        console.log(true);
+        console.log("true");
     } else {
     console.log('false')
     };
@@ -103,5 +103,80 @@ switch (chessPiece.toLowerCase()) {
         console.log("Nao e uma peca de xadrez");
 }
 
+// Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// // O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+const nota = 60
+
+    if (nota <0 || nota > 100) {
+        console.log("Erro, nota incorreta!");
+    } else if (nota >= 90) {
+        console.log("A");
+    } else if (nota >= 80){
+        console.log("B");
+    } else if (nota >= 70){
+        console.log("C");
+    } else if (nota >= 60){
+        console.log("D");
+    } else if (nota >= 50){
+        console.log("E");
+    } else 
+        console.log("F")
+
+// 8 .Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
+// Bonus: use somente um if .
     
-    
+const n1 = 30
+const n2 = 50
+const n3 = 25
+
+let isEven= true
+
+if (n1 % 2 === 0 || n2 % 2 === 0 || n3 % 2 === 0){
+    isEven = true;
+};
+console.log(isEven)
+
+// 9.Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+// Bonus: use somente um if .
+
+const n1 = 30
+const n2 = 50
+const n3 = 25
+
+let isEven= true
+
+if (n1 % 2 != 0 || n2 % 2 != 0 || n3 % 2 != 0){
+    isOdd = true;
+};
+console.log(isOdd)
+
+// 10.Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+// Atente que, sobre o custo do produto, incide um imposto de 20%.
+// Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
+// O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
+// valorCustoTotal = valorCusto + impostoSobreOCusto
+// lucro = valorVenda - valorCustoTotal (lucro de um produto)
+
+const costProduct = 200;
+const sellPrice = 500;
+
+const totalCost = costProduct + (costProduct/100)*20;
+const lucro = sellPrice - totalCost ;
+let unidades = 1000;
+
+     if (costProduct <= 0 && sellPrice <= 0 ) {
+         console.log("valor digitado incorreto.")
+         
+     } else {
+         console.log(lucro*unidades);
+
+     }
+
+
