@@ -152,29 +152,120 @@
 
 
 // 5 - Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: 'Tio Patinhas', 'Christmas on Bear Mountain, Dell's Four Color Comics #178', 'O último MacPatinhas', 'Sim'. Então, imprima os valores de cada objeto juntos de acordo com cada uma das chaves. Valor esperado no console:
-let info = {
-    personagem: 'Margarida',
-    origem: 'Pato Donald',
-    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-  };
-  info.recorrente = 'sim';
+// let info = {
+//     personagem: 'Margarida',
+//     origem: 'Pato Donald',
+//     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+//   };
+//   info.recorrente = 'sim';
 
-let info2 = {
-    personagem: 'Tio Patinhas',
-    origem: 'Christmas on Bear Mountain Dells Four Color Comics #178',
-    nota: 'O último MacPatinhas',
-  };
-  info2.recorrente = 'sim';
+// let info2 = {
+//     personagem: 'Tio Patinhas',
+//     origem: 'Christmas on Bear Mountain Dells Four Color Comics #178',
+//     nota: 'O último MacPatinhas',
+//   };
+//   info2.recorrente = 'sim';
 
-  for(let key in info){
-    if (
-        key === 'recorrente' &&
-        info[key] === 'sim' &&
-        info2[key] === 'sim'
-    ){
-        console.log('Ambos Recorrentes');
-    }else {
-        console.log(info[key] + ' e ' + info2[key]);
+//   for(let key in info){
+//     if (
+//         key === 'recorrente' &&
+//         info[key] === 'sim' &&
+//         info2[key] === 'sim'
+//     ){
+//         console.log('Ambos Recorrentes');
+//     }else {
+//         console.log(info[key] + ' e ' + info2[key]);
+//     }
+
+//   }
+
+
+// 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+// Exemplo de palíndromo: arara .
+// function palindrom(param1) {
+//     let splitParam1 = param1.split("");
+//     let reverseParam1 = splitParam1.reverse();
+//     let joinParam1 = reverseParam1.join("");
+//     if(joinParam1 === param1){
+//         return console.log(true);
+//     }return console.log(false);
+    
+    
+// }
+
+// palindrom('arara')  ;
+
+// verificaPalindrome('arara') ;
+// Retorno esperado: true
+// verificaPalindrome('desenvolvimento') ;
+// Retorno esperado: false
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+// Array de teste: [2, 3, 6, 7, 10, 1]; .
+// Valor esperado no retorno da função: 4 .
+// function Int(param1){
+//     maiorNum = 0;
+//     for(let index in param1) {
+//         if(maiorNum < param1[index]){
+//             maiorNum=param1[index]
+//         }
+//     }return console.log(maiorNum)
+// }
+
+// Int([2, 3, 6, 7, 10, 1])
+
+
+// 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+// Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+// Valor esperado no retorno da função: 6 .
+
+// function Int(param1){
+//     maiorNum = param1[0];
+//     for(let index in param1) {
+//         if(maiorNum > param1[index]){
+//             maiorNum=param1[index]
+//         }
+//     }return console.log(maiorNum)
+// }
+
+// Int([2, 3, 6, 7, 10, 1])
+
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+// Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+// Valor esperado no retorno da função: Fernanda .
+
+// function maiorArray(param1){
+//     maiorNum = param1[0];
+//         for(let index in param1) {
+//             if(maiorNum.length < param1[index].length){
+//                 maiorNum=param1[index]
+//             }
+//         }return console.log(maiorNum)
+
+// }
+// maiorArray(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
+
+// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
+// Valor esperado no retorno da função: 2 .
+
+function maisRepetido(numeros) {
+    let contRepetido = 0;
+    let contNumero = 0;
+    let indexNumeroRepetido = 0;
+    for (let index in numeros) {
+      let verificaNumero = numeros[index];
+      for (let index2 in numeros) {
+        if (verificaNumero === numeros[index2]) {
+          contNumero += 1;
+        }
+      }
+      if (contNumero > contRepetido) {
+        contRepetido = contNumero;
+        indexNumeroRepetido = index;
+      }
+      contNumero = 0;
     }
-
+    return console.log(numeros[indexNumeroRepetido]);
   }
+  maisRepetido([2, 3, 2, 5, 8, 2, 3])
