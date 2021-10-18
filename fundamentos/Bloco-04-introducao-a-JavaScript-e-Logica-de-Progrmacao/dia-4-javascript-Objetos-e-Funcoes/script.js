@@ -249,23 +249,54 @@
 // Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
 // Valor esperado no retorno da função: 2 .
 
-function maisRepetido(numeros) {
-    let contRepetido = 0;
-    let contNumero = 0;
-    let indexNumeroRepetido = 0;
-    for (let index in numeros) {
-      let verificaNumero = numeros[index];
-      for (let index2 in numeros) {
-        if (verificaNumero === numeros[index2]) {
-          contNumero += 1;
-        }
-      }
-      if (contNumero > contRepetido) {
-        contRepetido = contNumero;
-        indexNumeroRepetido = index;
-      }
-      contNumero = 0;
-    }
-    return console.log(numeros[indexNumeroRepetido]);
-  }
-  maisRepetido([2, 3, 2, 5, 8, 2, 3])
+// function maisRepetido(numeros) {
+//     let contRepetido = 0;
+//     let contNumero = 0;
+//     let indexNumeroRepetido = 0;
+//     for (let index in numeros) {
+//       let verificaNumero = numeros[index];
+//       for (let index2 in numeros) {
+//         if (verificaNumero === numeros[index2]) {
+//           contNumero += 1;
+//         }
+//       }
+//       if (contNumero > contRepetido) {
+//         contRepetido = contNumero;
+//         indexNumeroRepetido = index;
+//       }
+//       contNumero = 0;
+//     }
+//     return console.log(numeros[indexNumeroRepetido]);
+//   }
+//   maisRepetido([2, 3, 2, 5, 8, 2, 3])
+
+
+
+//   6 - Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+// Valor de teste: N = 5 .
+// Valor esperado no retorno da função: 1+2+3+4+5 = 15 .
+
+
+// function sum(number){
+//   let soma = 0;
+//   for(let index = 1 ; index <= number; index+= 1){
+//     soma +=index 
+    
+//   }return soma;
+// } 
+// console.log(sum(5));
+
+// 7 - Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+// Valor de teste: 'trybe' e 'be'
+// Valor esperado no retorno da função: true
+// verificaFimPalavra('trybe', 'be') ;
+// Retorno esperado: true
+// verificaFimPalavra('joaofernando', 'fernan') ;
+// Retorno esperado: false
+
+// function verificaFimPalavra(word, ending){
+//    if (word.length > ending.length){
+//     return true;
+//   } return false
+// }
+// console.log(verificaFimPalavra('joaofernando', 'fernan'));
