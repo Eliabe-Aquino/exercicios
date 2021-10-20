@@ -1,0 +1,26 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+
+  <script>
+    let brother = document.querySelector('#elementoOndeVoceEsta')
+    let element = document.querySelector('#pai')
+    element.style.color = 'red'
+    let element2 = document.querySelector('#primeiroFilhoDoFilho')
+    element2.innerText = 'Adoro estudar na Trybe'
+    console.log(document.querySelector('#pai').lastElementChild.previousElementSibling)
+
+    brother.append('div')
+    console.log(document.querySelector('#elementoOndeVoceEsta'))
+
+
+  </script>
