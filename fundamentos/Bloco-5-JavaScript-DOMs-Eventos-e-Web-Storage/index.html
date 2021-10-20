@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class=para id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class=para id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      const h2 = document.getElementById('page-title');
+      h2.innerText = 'Titanic'
+      const paragraph2 = document.getElementById('second-paragraph');
+      paragraph2.innerHTML = 'Melhor Filme'
+      const h4 = document.getElementById("subtitle");
+      h4.innerText = 'Censura - 14 anos'
+    
+    </script>
+  </body>
+</html>
