@@ -3,20 +3,24 @@
   <body>
     <header>
       <h2 id="page-title">Título</h2>
-      <p class=para id="paragraph">Dê uma cor para este parágrafo!</p>
+      <p class= "para" id="paragraph">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
-      <p class=para id="second-paragraph">Segundo parágrafo!</p>
+      <p class= "para" id="second-paragraph">Segundo parágrafo!</p>
     </header>
     <script>
-      const paragraph = document.getElementById("paragraph");
+      const paragraph = document.querySelector("#paragraph");
       paragraph.style.color = "red";
-      const h2 = document.getElementById('page-title');
+      const h2 = document.querySelector('#page-title');
       h2.innerText = 'Titanic'
-      const paragraph2 = document.getElementById('second-paragraph');
+      const paragraph2 = document.querySelector('#second-paragraph');
       paragraph2.innerHTML = 'Melhor Filme'
-      const h4 = document.getElementById("subtitle");
+      const h4 = document.querySelector("#subtitle");
       h4.innerText = 'Censura - 14 anos'
-    
+      const paras = document.querySelectorAll(".para")
+      paras[0].style.color = 'red'
+      const subs = document.querySelectorAll('h4')
+      subs[0].style.color = 'red'
+
     </script>
   </body>
 </html>
