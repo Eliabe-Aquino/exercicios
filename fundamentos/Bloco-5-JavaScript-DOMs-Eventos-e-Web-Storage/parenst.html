@@ -1,0 +1,59 @@
+<main class='paizao' id="paiDoPai">
+    <section id="pai">
+      <section class='remove' id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section class='remove' id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section class='remove' id="terceiroFilho"></section>
+      <section class='remove' id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+
+  <script>
+    // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+    
+    
+    let element2 = document.querySelector('#primeiroFilhoDoFilho')
+    element2.innerText = 'Adoro estudar na Trybe'
+   
+    // Crie um filho para elementoOndeVoceEsta .
+    let brother = document.querySelector('#elementoOndeVoceEsta')
+    let bro = document.createElement('section')
+    bro.id = 'NovoFilho'
+    brother.appendChild(bro)
+   
+    const pai = document.getElementById('pai');
+
+for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+  const currentChildren = pai.childNodes[index];
+  if (currentChildren.id !== 'elementoOndeVoceEsta') {
+    currentChildren.remove();
+  }
+}
+
+const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+segundoEUltimoFilhoDoFilho.remove();
+
+    // Crie um irmão para elementoOndeVoceEsta .
+    let dad = document.querySelector('#pai')
+    dad.style.color = 'red'
+    let browhereareu = document.createElement('section')
+    browhereareu.id = 'irmaoondeceta'
+    dad.appendChild(browhereareu)
+
+    // Crie um filho para primeiroFilhoDoFilho .
+    let firstson = document.querySelector('#primeiroFilhoDoFilho')
+    let newborn = document.createElement('section')
+    newborn.id = 'FirstSon'
+    firstson.appendChild(newborn)
+
+    // A partir desse filho criado, acesse terceiroFilho .
+    console.log(document.querySelector('#primeiroFilhoDoFilho section').parentElement.parentElement.nextElementSibling)
+
+    
+
+
+  </script>
