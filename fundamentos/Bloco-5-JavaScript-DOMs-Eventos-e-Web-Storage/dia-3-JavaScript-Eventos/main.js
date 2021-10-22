@@ -38,6 +38,10 @@ console.log(ulList)
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
+myWebpage.addEventListener("dblclick", () => {window.location.replace('https://eliabe-aquino.github.io/')} );{
+
+};
+
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
@@ -51,7 +55,7 @@ function resetText(event) {
   // que retorna o objeto que disparou o evento.
 }
 
-firstLi.addEventListener("dblclick", resetText);
+ulList.addEventListener("dblclick", resetText);
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
