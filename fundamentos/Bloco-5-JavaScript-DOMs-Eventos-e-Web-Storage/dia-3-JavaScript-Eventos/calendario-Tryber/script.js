@@ -42,3 +42,15 @@ function createDaysOfTheWeek() {
       
   }
   button('Feriados')
+
+  function fridayButton(btnName){
+    const divButton = document.querySelector('.buttons-container')
+    const button = document.createElement('button')
+    const buttonid = "btn-friday"
+      
+        button.innerHTML = btnName
+        button.id = buttonid
+        divButton.appendChild(button)
+      
+  }
+  fridayButton('Sexta-Feira')
