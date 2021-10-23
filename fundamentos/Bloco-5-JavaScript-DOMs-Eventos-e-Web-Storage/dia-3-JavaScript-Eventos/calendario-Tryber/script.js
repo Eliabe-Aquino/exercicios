@@ -53,4 +53,25 @@ function createDaysOfTheWeek() {
         divButton.appendChild(button)
       
   }
-  fridayButton('Sexta-Feira')
+  fridayButton('Sexta-feira')
+
+  function holiBack(){
+    let holyBtn = document.querySelector('#btn-holiday')
+    let listHoli = document.querySelectorAll('.holiday')
+    let backgroundColor = 'rgb(238,238,238)'
+    let resetBack = 'yellow'; 
+
+    
+    holyBtn.addEventListener('click', function() {
+      for(let index = 0; index < listHoli.length; index += 1){
+        if(listHoli[index].style.backgroundColor === resetBack){
+          listHoli[index].style.backgroundColor = backgroundColor;
+        } else {
+          listHoli[index].style.backgroundColor = resetBack
+          
+        }
+      }
+    })
+
+  }
+  holiBack()
