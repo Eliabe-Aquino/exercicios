@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="main-title">
+    <h2 class="title">Cadastre seu Currículo</h2>
+</header>
+<form action="" method="get" enctype="multipart/form-data">
+<div id="main-content">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <legend>Name:</legend>
+        <input type="text" id="name-client" name="client" maxlength="40" required>
+        <legend>Email:</legend>
+        <input type="email" id="email-client" name="client" maxlength="50" required>
+        <legend>CPF:</legend>
+        <input type="text" id="cpf-client" name="client" maxlength="11" required>
+        <legend>Endereço:</legend>
+        <input type="text" id="adress-client" name="client" maxlength="200" required>
+        <legend>Cidade:</legend>
+        <input type="text" id="city-client" name="client" maxlength="28" required>
+        <legend>Estado:</legend>
+        <select name="client" id="state-client" required></select>
+        <legend>Residencia:</legend>
+        <label for="house-client"><input type="radio" name="client" id="house-client" required>Casa</label>
+        <label for="ap-client"><input type="radio" name="client" id="ap-client" required>Apartamento</label>
+        
+        
+        
+    </fieldset>
+   
+    
+</div>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
