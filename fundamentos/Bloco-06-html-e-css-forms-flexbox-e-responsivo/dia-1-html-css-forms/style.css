@@ -1,0 +1,19 @@
+#main-title {
+   text-align: center;
+}
+
+#main-content{
+    width: 50%;
+    margin: 0 auto 0 auto;
+
+}
+
+#personal-data {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+#client {
+    width: 100%;
+}
+
