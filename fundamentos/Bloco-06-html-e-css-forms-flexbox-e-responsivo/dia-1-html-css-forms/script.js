@@ -11,3 +11,12 @@ for(let i = 0; i < estados.length; i += 1 ){
     opcao.value = siglasEstados[i]
     opcao.innerText = estados[i]
 }
+
+const btn = document.getElementById('enviar');
+
+btn.addEventListener ('click', (e) => {
+    e.preventDefault()
+});
+
+const inputs = document.getElementsByTagName('input');
+console.log(inputs);

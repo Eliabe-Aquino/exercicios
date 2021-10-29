@@ -15,8 +15,9 @@
 <div id="main-content">
     <fieldset id="personal-data">
         <legend>Dados Pessoais</legend>
+        <label for="client">
         <legend>Name:</legend>
-        <input type="text" id="client" name="name-client" maxlength="40" required>
+        <input type="text" id="client" name="name-client" maxlength="40" required></label>
         <legend>Email:</legend>
         <input type="email" id="client" name="email-client" maxlength="50" required>
         <legend>CPF:</legend>
@@ -28,11 +29,26 @@
         <legend>Estado:</legend>
         <select  name="client" id="state-client" required></select>
         <legend>Residencia:</legend>
-        <label for="house-client"><input type="radio" name="client" id="house-client" required>Casa</label>
-        <label for="ap-client"><input type="radio" name="client" id="ap-client" required>Apartamento</label>
+        <label for="house-client">Casa</label><input type="radio" name="client" id="house-client" required>
+        <label for="ap-client">Apartamento</label><input type="radio" name="client" id="ap-client" required>
         
         
         
+    </fieldset>
+   
+    
+</div>
+<div id="main-content">
+    <fieldset id="curriculum-data">
+        <legend>Dados Curriculo:</legend>
+        <textarea name="resume-curri" id="resume-curri" cols="55" rows="10" maxlength="1000"></textarea>
+        <legend>Cargo:</legend>
+        <input type="text" id="client" name="cargo-client" maxlength="40" required>
+        <legend>Descricação Cargo:</legend>
+        <input type="text" id="client" name="cargo-desc-client" maxlength="500" required>
+        <legend>Data de Inicio:</legend>
+        <input type="text" id="client" placeholder="00-00-0000" name="date-job-client" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" maxlength="10" required>
+        <button type="submit" id="enviar">Enviar</button>
     </fieldset>
    
     
