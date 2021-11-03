@@ -20,3 +20,5 @@ btn.addEventListener ('click', (e) => {
 
 const inputs = document.getElementsByTagName('input');
 console.log(inputs);
+
+//
