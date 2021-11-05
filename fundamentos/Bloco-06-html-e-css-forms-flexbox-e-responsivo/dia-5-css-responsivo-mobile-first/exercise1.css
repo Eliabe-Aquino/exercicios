@@ -1,0 +1,76 @@
+body {
+    font-size: 20px;
+    margin: 10px;
+
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+
+    body {
+        background-color: blueviolet;
+    }
+
+    main{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    main figure{ 
+        display: flex;
+        flex-flow: row wrap;
+        width: 50%;   
+    }
+          
+    h2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    body {
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 1500px){
+    body {
+        background-color: rgb(243, 14, 14);
+    }
+
+    body {
+        max-width: max-content;
+        font-size: 50px;
+        margin: 40px;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 4.5rem;
+    }
+  
+    main figure img{ 
+        width: 100%;   
+    }
+}
