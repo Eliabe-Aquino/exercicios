@@ -37,8 +37,8 @@
 // };
 // fatorial(4);
 
-const factorial = number => number > 1 ? number * factorial(number - 1) : 1;
-console.log(factorial(5));
+// const factorial = number => number > 1 ? number * factorial(number - 1) : 1;
+// console.log(factorial(5));
 
 // Bônus (opcional): tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator .
 
@@ -47,7 +47,17 @@ console.log(factorial(5));
 // Exemplo:
 // Copiar
 
-// longestWord("Antônio foi no banheiro e não sabemos o que aconteceu") // retorna 'aconteceu'
+// const longestWord = ("Antônio foi no banheiro e não sabemos o que aconteceu") // retorna 'aconteceu'
+
+// const result = longestWord
+//   .match(/\w+/g)
+//   .sort((a, b) => b.length - a.length)[0];
+  
+// console.log(result);
+
+const longestWord = text => text.split(' ').sort((a, b) => b.length - a.length)[0];
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) // retorna 'aconteceu'
+
 
 // Crie uma página que contenha:
 // Um botão ao qual será associado um event listener ;
