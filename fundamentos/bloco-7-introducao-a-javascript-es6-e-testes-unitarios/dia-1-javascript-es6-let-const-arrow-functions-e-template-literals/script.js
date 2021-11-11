@@ -55,8 +55,8 @@
   
 // console.log(result);
 
-const longestWord = text => text.split(' ').sort((a, b) => b.length - a.length)[0];
-console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) // retorna 'aconteceu'
+// const longestWord = text => text.split(' ').sort((a, b) => b.length - a.length)[0];
+// console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) // retorna 'aconteceu'
 
 
 // Crie uma página que contenha:
@@ -75,3 +75,162 @@ console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu
 // Exemplo: "Tryber x aqui! Minhas cinco principais habilidades são:
 // JavaScript;
 // HTML; ... #goTrybe".
+
+  
+// Agora, para praticar, crie uma função que receba três parâmetros, sendo eles: um objeto, o nome de uma chave e o seu valor. O retorno dessa função deve ser o objeto já com a nova chave adicionada nele.
+
+// const objeto = {};
+
+// const addNewKey = (obj,key,value) => {
+
+//       obj[key] = value
+//       return obj
+// };
+// console.log(addNewKey(objeto,'name','eliabe'))
+
+// const coolestTvShow = {
+//     name: "BoJack Horseman",
+//     genre: "adult animation",
+//     author: "Raphael Bob-Waksberg",
+//     favoriteCharacter: "Princess Carolyn",
+//     quote: "Princess Carolyn always lands on her feet.",
+//     seasons: 6,
+//   };
+  
+//   for (const property in coolestTvShow) {
+//     console.log(property);
+//   }
+
+// const coolestTvShow = {
+//     name: "BoJack Horseman",
+//     genre: "adult animation",
+//     createdBy: "Raphael Bob-Waksberg",
+//     favoriteCharacter: "Princess Carolyn",
+//     quote: "Princess Carolyn always lands on her feet.",
+//     seasons: 6,
+//   };
+  
+//   // for (const property in coolestTvShow) {
+//   //   console.log(property);
+//   // }
+  
+//   console.log(Object.keys(coolestTvShow));
+  
+//   // [ 'name', 'genre', 'createdBy', 'favoriteCharacter', 'quote', 'seasons' ]
+
+    //   const student1 = {
+    //     Html: 'Muito Bom',
+    //     Css: 'Bom',
+    //     JavaScript: 'Ótimo',
+    //     SoftSkills: 'Ótimo',
+    //   };
+    
+    //   const student2 = {
+    //     Html: 'Bom',
+    //     Css: 'Ótimo',
+    //     JavaScript: 'Ruim',
+    //     SoftSkills: 'Ótimo',
+    //     Git: 'Bom', // chave adicionada
+    //   };
+
+    //   const listSkills = (student) => {
+    //     const arrayOfSkills = Object.keys(student);
+    //     for(index in arrayOfSkills){
+    //       console.log(`${arrayOfSkills[index]}, Nível: ${student[arrayOfSkills[index]]}`);
+    //     }
+    //   };
+    
+    //   console.log('Estudante 1');
+    //   listSkills(student1);
+    
+    //   console.log('Estudante 2');
+    //   listSkills(student2);
+
+    // const student = {
+    //     Html: 'Muito Bom',
+    //     Css: 'Bom',
+    //     JavaScript: 'Ótimo',
+    //     SoftSkill: 'Ótimo',
+    //   };
+        
+    //   const listSkillsValuesWithValues = (student) => Object.values(student);
+        
+    //   // Com Object.values
+    //   console.log(listSkillsValuesWithValues(student));
+
+    // const coolestTvShow = {
+    //     name: "BoJack Horseman",
+    //     genre: "adult animation",
+    //     createdBy: "Raphael Bob-Waksberg",
+    //     favoriteCharacter: "Princess Carolyn",
+    //     quote: "Princess Carolyn always lands on her feet.",
+    //     seasons: 6,
+    //   };
+    
+//   console.log(Object.entries(coolestTvShow));
+  
+//   // [
+//   //   [ 'name', 'BoJack Horseman' ],
+//   //   [ 'genre', 'adult animation' ],
+//   //   [ 'createdBy', 'Raphael Bob-Waksberg' ],
+//   //   [ 'favoriteCharacter', 'Princess Carolyn' ],
+//   //   [ 'quote', 'Princess Carolyn always lands on her feet.' ],
+//   //   [ 'seasons', 6 ]
+//   // ]
+
+// let obj = { foo: 'bar', baz: 42 };
+// let map = new Map(Object.entries(obj));s
+// console.log(map);
+
+// const person = {
+//     name: 'Roberto',
+//   };
+  
+//   const lastName = {
+//     lastName: 'Silva',
+//   };
+  
+//   const clone = Object.assign(person, lastName);
+  
+//   console.log(clone); // { name: 'Roberto', lastName: 'Silva' }
+//   console.log(person); // { name: 'Roberto', lastName: 'Silva' }
+
+// clone.name = 'Maria';
+
+// console.log('Mudando a propriedade name através do objeto clone')
+// console.log(clone); // Output: { name: 'Maria', lastName: 'Silva' }
+// console.log(person); // Output: { name: 'Maria', lastName: 'Silva' }
+// console.log('--------------');
+
+// person.lastName = 'Ferreira';
+
+// console.log('Mudando a propriedade lastName através do objeto person');
+// console.log(clone); // Output: { name: 'Maria', lastName: 'Ferreira' }
+// console.log(person); // Output: { name: 'Maria', lastName: 'Ferreira' }
+
+const person = {
+    name:'Roberto',
+    adress: {
+        rua: 'joaima'
+    }
+  };
+  
+  const lastName = {
+    lastName: 'Silva',
+  };
+  
+  const newPerson = Object.assign({},person,lastName);
+  newPerson.name = 'Gilberto';
+  newPerson.adress.rua = 'comercio'
+  console.log(newPerson);
+  console.log(person);
+
+  console.log(newPerson.name)
+
+  const top3Albums = {
+    1: 'Nightfall in Middle-Earth',
+    2: 'Imaginations from the Other Side',
+    3: 'Somewhere Far Beyond',
+    };
+    
+    console.log(Object.entries(top3Albums));
